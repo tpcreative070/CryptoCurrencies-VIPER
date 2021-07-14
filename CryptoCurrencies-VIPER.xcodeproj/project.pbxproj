@@ -1,0 +1,598 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		310E5360269F64EA0075543A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310E535F269F64EA0075543A /* AppDelegate.swift */; };
+		310E5362269F64EA0075543A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310E5361269F64EA0075543A /* SceneDelegate.swift */; };
+		310E5364269F64EA0075543A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310E5363269F64EA0075543A /* ViewController.swift */; };
+		310E5367269F64EA0075543A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 310E5365269F64EA0075543A /* Main.storyboard */; };
+		310E5369269F64EB0075543A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 310E5368269F64EB0075543A /* Assets.xcassets */; };
+		310E536C269F64EB0075543A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 310E536A269F64EB0075543A /* LaunchScreen.storyboard */; };
+		310E5377269F64EB0075543A /* CryptoCurrencies_VIPERTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310E5376269F64EB0075543A /* CryptoCurrencies_VIPERTests.swift */; };
+		310E5382269F64EB0075543A /* CryptoCurrencies_VIPERUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310E5381269F64EB0075543A /* CryptoCurrencies_VIPERUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		310E5373269F64EB0075543A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 310E5354269F64EA0075543A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 310E535B269F64EA0075543A;
+			remoteInfo = "CryptoCurrencies-VIPER";
+		};
+		310E537E269F64EB0075543A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 310E5354269F64EA0075543A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 310E535B269F64EA0075543A;
+			remoteInfo = "CryptoCurrencies-VIPER";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		310E535C269F64EA0075543A /* CryptoCurrencies-VIPER.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CryptoCurrencies-VIPER.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		310E535F269F64EA0075543A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		310E5361269F64EA0075543A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		310E5363269F64EA0075543A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		310E5366269F64EA0075543A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		310E5368269F64EB0075543A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		310E536B269F64EB0075543A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		310E536D269F64EB0075543A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		310E5372269F64EB0075543A /* CryptoCurrencies-VIPERTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CryptoCurrencies-VIPERTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		310E5376269F64EB0075543A /* CryptoCurrencies_VIPERTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoCurrencies_VIPERTests.swift; sourceTree = "<group>"; };
+		310E5378269F64EB0075543A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		310E537D269F64EB0075543A /* CryptoCurrencies-VIPERUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CryptoCurrencies-VIPERUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		310E5381269F64EB0075543A /* CryptoCurrencies_VIPERUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoCurrencies_VIPERUITests.swift; sourceTree = "<group>"; };
+		310E5383269F64EB0075543A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		310E5359269F64EA0075543A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		310E536F269F64EB0075543A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		310E537A269F64EB0075543A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		310E5353269F64EA0075543A = {
+			isa = PBXGroup;
+			children = (
+				310E535E269F64EA0075543A /* CryptoCurrencies-VIPER */,
+				310E5375269F64EB0075543A /* CryptoCurrencies-VIPERTests */,
+				310E5380269F64EB0075543A /* CryptoCurrencies-VIPERUITests */,
+				310E535D269F64EA0075543A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		310E535D269F64EA0075543A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				310E535C269F64EA0075543A /* CryptoCurrencies-VIPER.app */,
+				310E5372269F64EB0075543A /* CryptoCurrencies-VIPERTests.xctest */,
+				310E537D269F64EB0075543A /* CryptoCurrencies-VIPERUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		310E535E269F64EA0075543A /* CryptoCurrencies-VIPER */ = {
+			isa = PBXGroup;
+			children = (
+				310E535F269F64EA0075543A /* AppDelegate.swift */,
+				310E5361269F64EA0075543A /* SceneDelegate.swift */,
+				310E5363269F64EA0075543A /* ViewController.swift */,
+				310E5365269F64EA0075543A /* Main.storyboard */,
+				310E5368269F64EB0075543A /* Assets.xcassets */,
+				310E536A269F64EB0075543A /* LaunchScreen.storyboard */,
+				310E536D269F64EB0075543A /* Info.plist */,
+			);
+			path = "CryptoCurrencies-VIPER";
+			sourceTree = "<group>";
+		};
+		310E5375269F64EB0075543A /* CryptoCurrencies-VIPERTests */ = {
+			isa = PBXGroup;
+			children = (
+				310E5376269F64EB0075543A /* CryptoCurrencies_VIPERTests.swift */,
+				310E5378269F64EB0075543A /* Info.plist */,
+			);
+			path = "CryptoCurrencies-VIPERTests";
+			sourceTree = "<group>";
+		};
+		310E5380269F64EB0075543A /* CryptoCurrencies-VIPERUITests */ = {
+			isa = PBXGroup;
+			children = (
+				310E5381269F64EB0075543A /* CryptoCurrencies_VIPERUITests.swift */,
+				310E5383269F64EB0075543A /* Info.plist */,
+			);
+			path = "CryptoCurrencies-VIPERUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		310E535B269F64EA0075543A /* CryptoCurrencies-VIPER */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 310E5386269F64EB0075543A /* Build configuration list for PBXNativeTarget "CryptoCurrencies-VIPER" */;
+			buildPhases = (
+				310E5358269F64EA0075543A /* Sources */,
+				310E5359269F64EA0075543A /* Frameworks */,
+				310E535A269F64EA0075543A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CryptoCurrencies-VIPER";
+			productName = "CryptoCurrencies-VIPER";
+			productReference = 310E535C269F64EA0075543A /* CryptoCurrencies-VIPER.app */;
+			productType = "com.apple.product-type.application";
+		};
+		310E5371269F64EB0075543A /* CryptoCurrencies-VIPERTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 310E5389269F64EB0075543A /* Build configuration list for PBXNativeTarget "CryptoCurrencies-VIPERTests" */;
+			buildPhases = (
+				310E536E269F64EB0075543A /* Sources */,
+				310E536F269F64EB0075543A /* Frameworks */,
+				310E5370269F64EB0075543A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				310E5374269F64EB0075543A /* PBXTargetDependency */,
+			);
+			name = "CryptoCurrencies-VIPERTests";
+			productName = "CryptoCurrencies-VIPERTests";
+			productReference = 310E5372269F64EB0075543A /* CryptoCurrencies-VIPERTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		310E537C269F64EB0075543A /* CryptoCurrencies-VIPERUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 310E538C269F64EB0075543A /* Build configuration list for PBXNativeTarget "CryptoCurrencies-VIPERUITests" */;
+			buildPhases = (
+				310E5379269F64EB0075543A /* Sources */,
+				310E537A269F64EB0075543A /* Frameworks */,
+				310E537B269F64EB0075543A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				310E537F269F64EB0075543A /* PBXTargetDependency */,
+			);
+			name = "CryptoCurrencies-VIPERUITests";
+			productName = "CryptoCurrencies-VIPERUITests";
+			productReference = 310E537D269F64EB0075543A /* CryptoCurrencies-VIPERUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		310E5354269F64EA0075543A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					310E535B269F64EA0075543A = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					310E5371269F64EB0075543A = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 310E535B269F64EA0075543A;
+					};
+					310E537C269F64EB0075543A = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 310E535B269F64EA0075543A;
+					};
+				};
+			};
+			buildConfigurationList = 310E5357269F64EA0075543A /* Build configuration list for PBXProject "CryptoCurrencies-VIPER" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 310E5353269F64EA0075543A;
+			productRefGroup = 310E535D269F64EA0075543A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				310E535B269F64EA0075543A /* CryptoCurrencies-VIPER */,
+				310E5371269F64EB0075543A /* CryptoCurrencies-VIPERTests */,
+				310E537C269F64EB0075543A /* CryptoCurrencies-VIPERUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		310E535A269F64EA0075543A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				310E536C269F64EB0075543A /* LaunchScreen.storyboard in Resources */,
+				310E5369269F64EB0075543A /* Assets.xcassets in Resources */,
+				310E5367269F64EA0075543A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		310E5370269F64EB0075543A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		310E537B269F64EB0075543A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		310E5358269F64EA0075543A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				310E5364269F64EA0075543A /* ViewController.swift in Sources */,
+				310E5360269F64EA0075543A /* AppDelegate.swift in Sources */,
+				310E5362269F64EA0075543A /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		310E536E269F64EB0075543A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				310E5377269F64EB0075543A /* CryptoCurrencies_VIPERTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		310E5379269F64EB0075543A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				310E5382269F64EB0075543A /* CryptoCurrencies_VIPERUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		310E5374269F64EB0075543A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 310E535B269F64EA0075543A /* CryptoCurrencies-VIPER */;
+			targetProxy = 310E5373269F64EB0075543A /* PBXContainerItemProxy */;
+		};
+		310E537F269F64EB0075543A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 310E535B269F64EA0075543A /* CryptoCurrencies-VIPER */;
+			targetProxy = 310E537E269F64EB0075543A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		310E5365269F64EA0075543A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				310E5366269F64EA0075543A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		310E536A269F64EB0075543A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				310E536B269F64EB0075543A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		310E5384269F64EB0075543A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		310E5385269F64EB0075543A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		310E5387269F64EB0075543A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AQHNXZHZ8T;
+				INFOPLIST_FILE = "CryptoCurrencies-VIPER/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.coinhako.com.CryptoCurrencies-VIPER";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		310E5388269F64EB0075543A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AQHNXZHZ8T;
+				INFOPLIST_FILE = "CryptoCurrencies-VIPER/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.coinhako.com.CryptoCurrencies-VIPER";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		310E538A269F64EB0075543A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AQHNXZHZ8T;
+				INFOPLIST_FILE = "CryptoCurrencies-VIPERTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.coinhako.com.CryptoCurrencies-VIPERTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CryptoCurrencies-VIPER.app/CryptoCurrencies-VIPER";
+			};
+			name = Debug;
+		};
+		310E538B269F64EB0075543A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AQHNXZHZ8T;
+				INFOPLIST_FILE = "CryptoCurrencies-VIPERTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.coinhako.com.CryptoCurrencies-VIPERTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CryptoCurrencies-VIPER.app/CryptoCurrencies-VIPER";
+			};
+			name = Release;
+		};
+		310E538D269F64EB0075543A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AQHNXZHZ8T;
+				INFOPLIST_FILE = "CryptoCurrencies-VIPERUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.coinhako.com.CryptoCurrencies-VIPERUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "CryptoCurrencies-VIPER";
+			};
+			name = Debug;
+		};
+		310E538E269F64EB0075543A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AQHNXZHZ8T;
+				INFOPLIST_FILE = "CryptoCurrencies-VIPERUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.coinhako.com.CryptoCurrencies-VIPERUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "CryptoCurrencies-VIPER";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		310E5357269F64EA0075543A /* Build configuration list for PBXProject "CryptoCurrencies-VIPER" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				310E5384269F64EB0075543A /* Debug */,
+				310E5385269F64EB0075543A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		310E5386269F64EB0075543A /* Build configuration list for PBXNativeTarget "CryptoCurrencies-VIPER" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				310E5387269F64EB0075543A /* Debug */,
+				310E5388269F64EB0075543A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		310E5389269F64EB0075543A /* Build configuration list for PBXNativeTarget "CryptoCurrencies-VIPERTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				310E538A269F64EB0075543A /* Debug */,
+				310E538B269F64EB0075543A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		310E538C269F64EB0075543A /* Build configuration list for PBXNativeTarget "CryptoCurrencies-VIPERUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				310E538D269F64EB0075543A /* Debug */,
+				310E538E269F64EB0075543A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 310E5354269F64EA0075543A /* Project object */;
+}
