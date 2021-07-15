@@ -34,8 +34,9 @@
 		310E53BD269F70290075543A /* CryptoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310E53BC269F70290075543A /* CryptoListView.swift */; };
 		310E53C0269F70840075543A /* CryptoListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310E53BF269F70840075543A /* CryptoListRouter.swift */; };
 		3188A4E6269FF4D600ECE6D2 /* CryptoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3188A4E5269FF4D600ECE6D2 /* CryptoTableViewCell.swift */; };
-		3188A4EE26A057BB00ECE6D2 /* CryptoListRemoteDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3188A4ED26A057BB00ECE6D2 /* CryptoListRemoteDataManager.swift */; };
-		3188A4F026A058D200ECE6D2 /* MockCryptoListRemoteDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3188A4EF26A058D200ECE6D2 /* MockCryptoListRemoteDataManager.swift */; };
+		3188A4F226A0A0AC00ECE6D2 /* CryptoListPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3188A4F126A0A0AC00ECE6D2 /* CryptoListPresenterTests.swift */; };
+		3188A4F426A0A0CA00ECE6D2 /* CryptoListInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3188A4F326A0A0CA00ECE6D2 /* CryptoListInteractorTests.swift */; };
+		3188A4F626A0A10200ECE6D2 /* CryptoListRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3188A4F526A0A10200ECE6D2 /* CryptoListRouterTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -102,8 +103,9 @@
 		310E53BC269F70290075543A /* CryptoListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoListView.swift; sourceTree = "<group>"; };
 		310E53BF269F70840075543A /* CryptoListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoListRouter.swift; sourceTree = "<group>"; };
 		3188A4E5269FF4D600ECE6D2 /* CryptoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoTableViewCell.swift; sourceTree = "<group>"; };
-		3188A4ED26A057BB00ECE6D2 /* CryptoListRemoteDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoListRemoteDataManager.swift; sourceTree = "<group>"; };
-		3188A4EF26A058D200ECE6D2 /* MockCryptoListRemoteDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockCryptoListRemoteDataManager.swift; sourceTree = "<group>"; };
+		3188A4F126A0A0AC00ECE6D2 /* CryptoListPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoListPresenterTests.swift; sourceTree = "<group>"; };
+		3188A4F326A0A0CA00ECE6D2 /* CryptoListInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoListInteractorTests.swift; sourceTree = "<group>"; };
+		3188A4F526A0A10200ECE6D2 /* CryptoListRouterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoListRouterTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,9 +179,10 @@
 			isa = PBXGroup;
 			children = (
 				310E5376269F64EB0075543A /* CryptoCurrencies_VIPERTests.swift */,
-				3188A4ED26A057BB00ECE6D2 /* CryptoListRemoteDataManager.swift */,
-				3188A4EF26A058D200ECE6D2 /* MockCryptoListRemoteDataManager.swift */,
 				310E5378269F64EB0075543A /* Info.plist */,
+				3188A4F326A0A0CA00ECE6D2 /* CryptoListInteractorTests.swift */,
+				3188A4F126A0A0AC00ECE6D2 /* CryptoListPresenterTests.swift */,
+				3188A4F526A0A10200ECE6D2 /* CryptoListRouterTests.swift */,
 			);
 			path = "CryptoCurrencies-VIPERTests";
 			sourceTree = "<group>";
@@ -434,8 +437,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3188A4F026A058D200ECE6D2 /* MockCryptoListRemoteDataManager.swift in Sources */,
-				3188A4EE26A057BB00ECE6D2 /* CryptoListRemoteDataManager.swift in Sources */,
+				3188A4F626A0A10200ECE6D2 /* CryptoListRouterTests.swift in Sources */,
+				3188A4F226A0A0AC00ECE6D2 /* CryptoListPresenterTests.swift in Sources */,
+				3188A4F426A0A0CA00ECE6D2 /* CryptoListInteractorTests.swift in Sources */,
 				310E5377269F64EB0075543A /* CryptoCurrencies_VIPERTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
