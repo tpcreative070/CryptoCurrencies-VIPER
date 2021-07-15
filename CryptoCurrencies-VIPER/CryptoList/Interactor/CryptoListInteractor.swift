@@ -15,22 +15,7 @@ class CryptoListInteractor: CryptoListInteractorInputProtocol {
     private var timer : Timer?
     
     func retrieveCryptoList() {
-        do {
-            if let postList = try localDatamanager?.retrieveCryptoList() {
-                let postModelList = postList.map() {
-                    return CryptoModel(base: $0.base, counter: $0.counter, buyPrice: $0.buyPrice, sellPrice: $0.sellPrice, icon: $0.icon, name: $0.name)
-                }
-                if  postModelList.isEmpty {
-                    remoteDatamanager?.retrieveCryptoList()
-                }else{
-                   presenter?.didRetrieveCryptos(postModelList)
-                }
-            } else {
-                remoteDatamanager?.retrieveCryptoList()
-            }
-        } catch {
-            presenter?.didRetrieveCryptos([])
-        }
+        remoteDatamanager?.retrieveCryptoList()
     }
     
     func filterCrypto(original data: [CryptoModel], searchText : String) {
