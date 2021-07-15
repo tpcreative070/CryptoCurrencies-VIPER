@@ -10,7 +10,6 @@ import Foundation
 class CryptoListInteractor: CryptoListInteractorInputProtocol {
  
     weak var presenter: CryptoListInteractorOutputProtocol?
-    var localDatamanager: CryptoListLocalDataManagerInputProtocol?
     var remoteDatamanager: CryptoListRemoteDataManagerInputProtocol?
     private var timer : Timer?
     

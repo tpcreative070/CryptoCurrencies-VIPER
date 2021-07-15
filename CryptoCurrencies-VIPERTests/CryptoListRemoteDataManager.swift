@@ -9,6 +9,8 @@ import XCTest
 @testable import CryptoCurrencies_VIPER
 class CryptoListRemoteDataManager: XCTestCase {
 
+    var cryptoInteractor : CryptoListInteractor!
+    
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }

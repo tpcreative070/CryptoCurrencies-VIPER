@@ -22,7 +22,6 @@ protocol CryptoListRemoteDataManagerInputProtocol: AnyObject {
 
 protocol CryptoListInteractorInputProtocol: AnyObject {
     var presenter: CryptoListInteractorOutputProtocol? { get set }
-    var localDatamanager: CryptoListLocalDataManagerInputProtocol? { get set }
     var remoteDatamanager: CryptoListRemoteDataManagerInputProtocol? { get set }
     
     // PRESENTER -> INTERACTOR
@@ -77,7 +76,6 @@ protocol CryptoListPresenterProtocol: AnyObject {
     
     // VIEW -> PRESENTER
     func viewDidLoad()
-    func showCryptoDetail(forPost post: CryptoModel)
     func filterCrypto(original data : [CryptoModel],searchText : String)
     func startTimer()
     func stopTimer()
@@ -85,7 +83,5 @@ protocol CryptoListPresenterProtocol: AnyObject {
 
 protocol CryptoListRouterProtocol: AnyObject {
     static func createCryptoListModule() -> UIViewController
-    // PRESENTER -> WIREFRAME
-    func presentCryptoDetailScreen(from view: CryptoListViewProtocol, forPost post: CryptoModel)
 }
 

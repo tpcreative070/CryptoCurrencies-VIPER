@@ -33,9 +33,4 @@ class CryptoListRouter : CryptoListRouterProtocol {
     static var mainStoryboard: UIStoryboard {
         return UIStoryboard(name: "Main", bundle: Bundle.main)
     }
-        
-    func presentCryptoDetailScreen(from view: CryptoListViewProtocol, forPost post: CryptoModel) {
-        
-    }
-    
 }

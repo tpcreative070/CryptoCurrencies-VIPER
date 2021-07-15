@@ -17,11 +17,7 @@ class CryptoListPresenter: CryptoListPresenterProtocol {
         view?.showLoading()
         interactor?.retrieveCryptoList()
     }
-    
-    func showCryptoDetail(forPost post: CryptoModel) {
-        router?.presentCryptoDetailScreen(from: view!, forPost: post)
-    }
-    
+        
     func filterCrypto(original data: [CryptoModel], searchText: String) {
         interactor?.filterCrypto(original: data, searchText: searchText)
     }
