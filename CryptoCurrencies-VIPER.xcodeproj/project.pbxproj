@@ -3,18 +3,37 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		310E5360269F64EA0075543A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310E535F269F64EA0075543A /* AppDelegate.swift */; };
 		310E5362269F64EA0075543A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310E5361269F64EA0075543A /* SceneDelegate.swift */; };
-		310E5364269F64EA0075543A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310E5363269F64EA0075543A /* ViewController.swift */; };
 		310E5367269F64EA0075543A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 310E5365269F64EA0075543A /* Main.storyboard */; };
 		310E5369269F64EB0075543A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 310E5368269F64EB0075543A /* Assets.xcassets */; };
 		310E536C269F64EB0075543A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 310E536A269F64EB0075543A /* LaunchScreen.storyboard */; };
 		310E5377269F64EB0075543A /* CryptoCurrencies_VIPERTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310E5376269F64EB0075543A /* CryptoCurrencies_VIPERTests.swift */; };
 		310E5382269F64EB0075543A /* CryptoCurrencies_VIPERUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310E5381269F64EB0075543A /* CryptoCurrencies_VIPERUITests.swift */; };
+		310E539A269F65220075543A /* PKHUD.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 310E5391269F651D0075543A /* PKHUD.xcframework */; };
+		310E539B269F65220075543A /* PKHUD.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 310E5391269F651D0075543A /* PKHUD.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		310E539D269F65230075543A /* ObjectMapper.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 310E5392269F651D0075543A /* ObjectMapper.xcframework */; };
+		310E539E269F65230075543A /* ObjectMapper.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 310E5392269F651D0075543A /* ObjectMapper.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		310E539F269F65240075543A /* AlamofireObjectMapper.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 310E5393269F651E0075543A /* AlamofireObjectMapper.xcframework */; };
+		310E53A0269F65240075543A /* AlamofireObjectMapper.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 310E5393269F651E0075543A /* AlamofireObjectMapper.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		310E53A1269F65250075543A /* AlamofireImage.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 310E5390269F651D0075543A /* AlamofireImage.xcframework */; };
+		310E53A2269F65250075543A /* AlamofireImage.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 310E5390269F651D0075543A /* AlamofireImage.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		310E53A3269F65260075543A /* Alamofire.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 310E5394269F651E0075543A /* Alamofire.xcframework */; };
+		310E53A4269F65260075543A /* Alamofire.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 310E5394269F651E0075543A /* Alamofire.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		310E53A8269F65A50075543A /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310E53A7269F65A50075543A /* Endpoints.swift */; };
+		310E53AA269F65E30075543A /* PersistenceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310E53A9269F65E30075543A /* PersistenceError.swift */; };
+		310E53AD269F66450075543A /* CryptoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310E53AC269F66450075543A /* CryptoModel.swift */; };
+		310E53B2269F67930075543A /* CryptoListProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310E53B1269F67930075543A /* CryptoListProtocols.swift */; };
+		310E53B4269F680D0075543A /* CryptoListDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310E53B3269F680D0075543A /* CryptoListDataManager.swift */; };
+		310E53B7269F6AA30075543A /* CryptoListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310E53B6269F6AA30075543A /* CryptoListInteractor.swift */; };
+		310E53BA269F6D8B0075543A /* CryptoListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310E53B9269F6D8B0075543A /* CryptoListPresenter.swift */; };
+		310E53BD269F70290075543A /* CryptoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310E53BC269F70290075543A /* CryptoListView.swift */; };
+		310E53C0269F70840075543A /* CryptoListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310E53BF269F70840075543A /* CryptoListRouter.swift */; };
+		3188A4E6269FF4D600ECE6D2 /* CryptoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3188A4E5269FF4D600ECE6D2 /* CryptoTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,11 +53,28 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		310E539C269F65220075543A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				310E53A4269F65260075543A /* Alamofire.xcframework in Embed Frameworks */,
+				310E53A2269F65250075543A /* AlamofireImage.xcframework in Embed Frameworks */,
+				310E539B269F65220075543A /* PKHUD.xcframework in Embed Frameworks */,
+				310E53A0269F65240075543A /* AlamofireObjectMapper.xcframework in Embed Frameworks */,
+				310E539E269F65230075543A /* ObjectMapper.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		310E535C269F64EA0075543A /* CryptoCurrencies-VIPER.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CryptoCurrencies-VIPER.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		310E535F269F64EA0075543A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		310E5361269F64EA0075543A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		310E5363269F64EA0075543A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		310E5366269F64EA0075543A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		310E5368269F64EB0075543A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		310E536B269F64EB0075543A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +85,21 @@
 		310E537D269F64EB0075543A /* CryptoCurrencies-VIPERUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CryptoCurrencies-VIPERUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		310E5381269F64EB0075543A /* CryptoCurrencies_VIPERUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoCurrencies_VIPERUITests.swift; sourceTree = "<group>"; };
 		310E5383269F64EB0075543A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		310E5390269F651D0075543A /* AlamofireImage.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = AlamofireImage.xcframework; sourceTree = "<group>"; };
+		310E5391269F651D0075543A /* PKHUD.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = PKHUD.xcframework; sourceTree = "<group>"; };
+		310E5392269F651D0075543A /* ObjectMapper.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = ObjectMapper.xcframework; sourceTree = "<group>"; };
+		310E5393269F651E0075543A /* AlamofireObjectMapper.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = AlamofireObjectMapper.xcframework; sourceTree = "<group>"; };
+		310E5394269F651E0075543A /* Alamofire.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = Alamofire.xcframework; sourceTree = "<group>"; };
+		310E53A7269F65A50075543A /* Endpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoints.swift; sourceTree = "<group>"; };
+		310E53A9269F65E30075543A /* PersistenceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceError.swift; sourceTree = "<group>"; };
+		310E53AC269F66450075543A /* CryptoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoModel.swift; sourceTree = "<group>"; };
+		310E53B1269F67930075543A /* CryptoListProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoListProtocols.swift; sourceTree = "<group>"; };
+		310E53B3269F680D0075543A /* CryptoListDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoListDataManager.swift; sourceTree = "<group>"; };
+		310E53B6269F6AA30075543A /* CryptoListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoListInteractor.swift; sourceTree = "<group>"; };
+		310E53B9269F6D8B0075543A /* CryptoListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoListPresenter.swift; sourceTree = "<group>"; };
+		310E53BC269F70290075543A /* CryptoListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoListView.swift; sourceTree = "<group>"; };
+		310E53BF269F70840075543A /* CryptoListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoListRouter.swift; sourceTree = "<group>"; };
+		3188A4E5269FF4D600ECE6D2 /* CryptoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +107,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				310E53A3269F65260075543A /* Alamofire.xcframework in Frameworks */,
+				310E539A269F65220075543A /* PKHUD.xcframework in Frameworks */,
+				310E539D269F65230075543A /* ObjectMapper.xcframework in Frameworks */,
+				310E539F269F65240075543A /* AlamofireObjectMapper.xcframework in Frameworks */,
+				310E53A1269F65250075543A /* AlamofireImage.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,9 +155,12 @@
 		310E535E269F64EA0075543A /* CryptoCurrencies-VIPER */ = {
 			isa = PBXGroup;
 			children = (
+				310E53AE269F670E0075543A /* CryptoList */,
+				310E53AB269F65FB0075543A /* Entities */,
+				310E53A6269F65560075543A /* Common */,
+				310E538F269F64FB0075543A /* Framework */,
 				310E535F269F64EA0075543A /* AppDelegate.swift */,
 				310E5361269F64EA0075543A /* SceneDelegate.swift */,
-				310E5363269F64EA0075543A /* ViewController.swift */,
 				310E5365269F64EA0075543A /* Main.storyboard */,
 				310E5368269F64EB0075543A /* Assets.xcassets */,
 				310E536A269F64EB0075543A /* LaunchScreen.storyboard */,
@@ -128,6 +187,97 @@
 			path = "CryptoCurrencies-VIPERUITests";
 			sourceTree = "<group>";
 		};
+		310E538F269F64FB0075543A /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				310E5394269F651E0075543A /* Alamofire.xcframework */,
+				310E5390269F651D0075543A /* AlamofireImage.xcframework */,
+				310E5393269F651E0075543A /* AlamofireObjectMapper.xcframework */,
+				310E5392269F651D0075543A /* ObjectMapper.xcframework */,
+				310E5391269F651D0075543A /* PKHUD.xcframework */,
+			);
+			path = Framework;
+			sourceTree = "<group>";
+		};
+		310E53A6269F65560075543A /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				310E53A7269F65A50075543A /* Endpoints.swift */,
+				310E53A9269F65E30075543A /* PersistenceError.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		310E53AB269F65FB0075543A /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				310E53AC269F66450075543A /* CryptoModel.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		310E53AE269F670E0075543A /* CryptoList */ = {
+			isa = PBXGroup;
+			children = (
+				310E53BE269F705F0075543A /* Router */,
+				310E53BB269F70180075543A /* View */,
+				310E53B8269F6D760075543A /* Presenter */,
+				310E53B5269F6A810075543A /* Interactor */,
+				310E53B0269F67720075543A /* Protocols */,
+				310E53AF269F672B0075543A /* DataManager */,
+			);
+			path = CryptoList;
+			sourceTree = "<group>";
+		};
+		310E53AF269F672B0075543A /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				310E53B3269F680D0075543A /* CryptoListDataManager.swift */,
+			);
+			path = DataManager;
+			sourceTree = "<group>";
+		};
+		310E53B0269F67720075543A /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				310E53B1269F67930075543A /* CryptoListProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		310E53B5269F6A810075543A /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				310E53B6269F6AA30075543A /* CryptoListInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		310E53B8269F6D760075543A /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				310E53B9269F6D8B0075543A /* CryptoListPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		310E53BB269F70180075543A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				310E53BC269F70290075543A /* CryptoListView.swift */,
+				3188A4E5269FF4D600ECE6D2 /* CryptoTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		310E53BE269F705F0075543A /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				310E53BF269F70840075543A /* CryptoListRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -138,6 +288,7 @@
 				310E5358269F64EA0075543A /* Sources */,
 				310E5359269F64EA0075543A /* Frameworks */,
 				310E535A269F64EA0075543A /* Resources */,
+				310E539C269F65220075543A /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -258,9 +409,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				310E5364269F64EA0075543A /* ViewController.swift in Sources */,
+				310E53B4269F680D0075543A /* CryptoListDataManager.swift in Sources */,
+				310E53AD269F66450075543A /* CryptoModel.swift in Sources */,
+				310E53BD269F70290075543A /* CryptoListView.swift in Sources */,
 				310E5360269F64EA0075543A /* AppDelegate.swift in Sources */,
+				310E53A8269F65A50075543A /* Endpoints.swift in Sources */,
+				310E53AA269F65E30075543A /* PersistenceError.swift in Sources */,
+				310E53B2269F67930075543A /* CryptoListProtocols.swift in Sources */,
+				310E53B7269F6AA30075543A /* CryptoListInteractor.swift in Sources */,
+				3188A4E6269FF4D600ECE6D2 /* CryptoTableViewCell.swift in Sources */,
 				310E5362269F64EA0075543A /* SceneDelegate.swift in Sources */,
+				310E53BA269F6D8B0075543A /* CryptoListPresenter.swift in Sources */,
+				310E53C0269F70840075543A /* CryptoListRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
