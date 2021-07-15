@@ -11,7 +11,9 @@ class CryptoListView : UIViewController {
     var presenter: CryptoListPresenterProtocol?
     var cryptoList: [CryptoModel] = []
     var cryptoFilter : [CryptoModel] = []
+    weak var timer: Timer?
     
+    @IBOutlet weak var indicatorView: UIActivityIndicatorView!
     @IBOutlet weak var searchBarView: UISearchBar!
     @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
@@ -20,6 +22,11 @@ class CryptoListView : UIViewController {
         navigationItem.titleView = searchBarView
         self.searchBarView.delegate = self
         presenter?.viewDidLoad()
+        presenter?.startTimer()
+    }
+    
+    deinit {
+        presenter?.stopTimer()
     }
 }
 
@@ -36,16 +43,24 @@ extension CryptoListView: CryptoListViewProtocol {
         tableView.reloadData()
     }
     
+    func requestFetching() {
+        presenter?.viewDidLoad()
+    }
+    
     func showError() {
         HUD.flash(.label("Internet not connected"), delay: 2.0)
     }
     
     func showLoading() {
-        HUD.show(.progress)
+        DispatchQueue.main.async {
+            HUD.show(.progress)
+        }
     }
     
     func hideLoading() {
-        HUD.hide()
+        DispatchQueue.main.async {
+            HUD.hide()
+        }
     }
 }
 

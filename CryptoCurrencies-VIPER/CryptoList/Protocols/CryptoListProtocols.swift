@@ -28,12 +28,15 @@ protocol CryptoListInteractorInputProtocol: AnyObject {
     // PRESENTER -> INTERACTOR
     func retrieveCryptoList()
     func filterCrypto(original data: [CryptoModel], searchText : String)
+    func startTimer()
+    func stopTimer()
 }
 
 protocol CryptoListInteractorOutputProtocol: AnyObject {
     // INTERACTOR -> PRESENTER
     func didRetrieveCryptos(_ posts: [CryptoModel])
     func didFilterCryptos(_ cryptos : [CryptoModel])
+    func requestFetching()
     func onError()
 }
 
@@ -58,6 +61,8 @@ protocol CryptoListViewProtocol: AnyObject {
     
     func showFilterCryptos(with posts : [CryptoModel])
     
+    func requestFetching()
+    
     func showError()
     
     func showLoading()
@@ -74,6 +79,8 @@ protocol CryptoListPresenterProtocol: AnyObject {
     func viewDidLoad()
     func showCryptoDetail(forPost post: CryptoModel)
     func filterCrypto(original data : [CryptoModel],searchText : String)
+    func startTimer()
+    func stopTimer()
 }
 
 protocol CryptoListRouterProtocol: AnyObject {

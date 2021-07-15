@@ -25,6 +25,14 @@ class CryptoListPresenter: CryptoListPresenterProtocol {
     func filterCrypto(original data: [CryptoModel], searchText: String) {
         interactor?.filterCrypto(original: data, searchText: searchText)
     }
+    
+    func startTimer() {
+        interactor?.startTimer()
+    }
+    
+    func stopTimer() {
+        interactor?.stopTimer()
+    }
 }
 
 extension CryptoListPresenter: CryptoListInteractorOutputProtocol {
@@ -38,6 +46,10 @@ extension CryptoListPresenter: CryptoListInteractorOutputProtocol {
         view?.showFilterCryptos(with: cryptos)
     }
     
+    func requestFetching() {
+        view?.requestFetching()
+    }
+        
     func onError() {
         view?.hideLoading()
         view?.showError()

@@ -16,6 +16,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="7n2-Ok-oDv">
+                                <rect key="frame" x="187" y="428" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="NQ7-IT-uN8"/>
+                                    <constraint firstAttribute="width" constant="40" id="riA-6S-XXj"/>
+                                </constraints>
+                                <color key="color" systemColor="systemRedColor"/>
+                            </activityIndicatorView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="qLP-Hs-aTd">
                                 <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -77,14 +85,17 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="7n2-Ok-oDv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7tu-5C-quc"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qLP-Hs-aTd" secondAttribute="trailing" id="HHL-Bs-Gmk"/>
                             <constraint firstItem="qLP-Hs-aTd" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Oyq-sj-q5s"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="qLP-Hs-aTd" secondAttribute="bottom" id="XXb-tA-Ny8"/>
                             <constraint firstItem="qLP-Hs-aTd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="grT-dO-s20"/>
+                            <constraint firstItem="7n2-Ok-oDv" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="nBS-5v-Kvi"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="0i5-H3-K4J"/>
                     <connections>
+                        <outlet property="indicatorView" destination="7n2-Ok-oDv" id="2U2-Ly-HDc"/>
                         <outlet property="searchBarView" destination="Vsw-pf-U4g" id="BjB-8x-0Av"/>
                         <outlet property="tableView" destination="qLP-Hs-aTd" id="ClA-1d-rs9"/>
                     </connections>
@@ -120,6 +131,9 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
