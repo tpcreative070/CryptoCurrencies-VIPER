@@ -78,17 +78,23 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qLP-Hs-aTd" secondAttribute="trailing" id="HHL-Bs-Gmk"/>
+                            <constraint firstItem="qLP-Hs-aTd" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Oyq-sj-q5s"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="qLP-Hs-aTd" secondAttribute="bottom" id="XXb-tA-Ny8"/>
-                            <constraint firstItem="qLP-Hs-aTd" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="dFB-7c-uW2"/>
                             <constraint firstItem="qLP-Hs-aTd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="grT-dO-s20"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="0i5-H3-K4J"/>
                     <connections>
+                        <outlet property="searchBarView" destination="Vsw-pf-U4g" id="BjB-8x-0Av"/>
                         <outlet property="tableView" destination="qLP-Hs-aTd" id="ClA-1d-rs9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <searchBar contentMode="redraw" placeholder="Search name" id="Vsw-pf-U4g">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                    <textInputTraits key="textInputTraits"/>
+                </searchBar>
             </objects>
             <point key="canvasLocation" x="1952.1739130434785" y="110.49107142857143"/>
         </scene>

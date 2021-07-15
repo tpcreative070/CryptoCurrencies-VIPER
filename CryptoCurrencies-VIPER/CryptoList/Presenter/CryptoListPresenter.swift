@@ -11,6 +11,7 @@ class CryptoListPresenter: CryptoListPresenterProtocol {
     weak var view: CryptoListViewProtocol?
     var interactor: CryptoListInteractorInputProtocol?
     var router: CryptoListRouterProtocol?
+    private var restoreList : [CryptoModel] = []
     
     func viewDidLoad() {
         view?.showLoading()
@@ -19,6 +20,10 @@ class CryptoListPresenter: CryptoListPresenterProtocol {
     
     func showCryptoDetail(forPost post: CryptoModel) {
         router?.presentCryptoDetailScreen(from: view!, forPost: post)
+    }
+    
+    func filterCrypto(original data: [CryptoModel], searchText: String) {
+        interactor?.filterCrypto(original: data, searchText: searchText)
     }
 }
 
@@ -29,11 +34,14 @@ extension CryptoListPresenter: CryptoListInteractorOutputProtocol {
         view?.showCryptos(with: posts)
     }
     
+    func didFilterCryptos(_ cryptos: [CryptoModel]) {
+        view?.showFilterCryptos(with: cryptos)
+    }
+    
     func onError() {
         view?.hideLoading()
         view?.showError()
     }
-    
 }
 
 

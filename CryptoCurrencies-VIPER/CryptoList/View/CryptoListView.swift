@@ -10,11 +10,15 @@ import PKHUD
 class CryptoListView : UIViewController {
     var presenter: CryptoListPresenterProtocol?
     var cryptoList: [CryptoModel] = []
+    var cryptoFilter : [CryptoModel] = []
     
+    @IBOutlet weak var searchBarView: UISearchBar!
     @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.rowHeight = 60
+        navigationItem.titleView = searchBarView
+        self.searchBarView.delegate = self
         presenter?.viewDidLoad()
     }
 }
@@ -22,6 +26,12 @@ class CryptoListView : UIViewController {
 extension CryptoListView: CryptoListViewProtocol {
     
     func showCryptos(with posts: [CryptoModel]) {
+        cryptoList = posts
+        cryptoFilter = posts
+        tableView.reloadData()
+    }
+    
+    func showFilterCryptos(with posts: [CryptoModel]) {
         cryptoList = posts
         tableView.reloadData()
     }
@@ -37,17 +47,14 @@ extension CryptoListView: CryptoListViewProtocol {
     func hideLoading() {
         HUD.hide()
     }
-    
 }
 
 extension CryptoListView: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
         let cell = tableView.dequeueReusableCell(withIdentifier: "CryptoCell", for: indexPath) as! CryptoTableViewCell
         let post = cryptoList[indexPath.row]
         cell.set(forPost: post)
-        
         return cell
     }
     
@@ -58,5 +65,10 @@ extension CryptoListView: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         //presenter?.showPostDetail(forPost: cryptoList[indexPath.row])
     }
-    
+}
+
+extension CryptoListView : UISearchBarDelegate {
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        presenter?.filterCrypto(original: cryptoFilter, searchText: searchText)
+    }
 }

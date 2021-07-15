@@ -31,6 +31,15 @@ class CryptoListInteractor: CryptoListInteractorInputProtocol {
             presenter?.didRetrieveCryptos([])
         }
     }
+    
+    func filterCrypto(original data: [CryptoModel], searchText : String) {
+        guard !searchText.isEmpty else {
+            presenter?.didRetrieveCryptos(data)
+            return
+        }
+        let mResult = data.filter({$0.name.contains(searchText)})
+        presenter?.didFilterCryptos(mResult)
+    }
 }
 
 extension CryptoListInteractor: CryptoListRemoteDataManagerOutputProtocol {
