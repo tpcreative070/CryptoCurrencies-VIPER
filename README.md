@@ -6,5 +6,5 @@ Opening project and run
 - List features
   + Showing list cryptocurrencies
   + Searching brand name
-  + Makeing timer eacho 30 seconds fetching data from server
+  + Makeing timer each 30 seconds fetching data from server
   + Unit test for Interactor
