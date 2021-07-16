@@ -14,6 +14,7 @@ protocol CryptoListDataManagerOutputProtocol : AnyObject {
 
 protocol CryptoListRemoteDataManagerInputProtocol: AnyObject {
     var remoteRequestHandler: CryptoListRemoteDataManagerOutputProtocol? { get set }
+    var clientService : CryptoFetchingDataProtocol? {get set}
     
     // INTERACTOR -> REMOTEDATAMANAGER
     func retrieveCryptoList()
@@ -23,7 +24,7 @@ protocol CryptoListRemoteDataManagerInputProtocol: AnyObject {
 protocol CryptoListInteractorInputProtocol: AnyObject {
     var presenter: CryptoListInteractorOutputProtocol? { get set }
     var remoteDatamanager: CryptoListRemoteDataManagerInputProtocol? { get set }
-    
+    var enumInteractor : EnumInteractor {get set}
     // PRESENTER -> INTERACTOR
     func retrieveCryptoList()
     func filterCrypto(original data: [CryptoModel], searchText : String)
@@ -85,3 +86,7 @@ protocol CryptoListRouterProtocol: AnyObject {
     static func createCryptoListModule() -> UIViewController
 }
 
+
+protocol CryptoFetchingDataProtocol : AnyObject{
+    func fetchingData(completion : @escaping([CryptoModel], Error?) -> Void)
+}

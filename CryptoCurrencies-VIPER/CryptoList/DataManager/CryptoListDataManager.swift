@@ -10,18 +10,15 @@ import AlamofireObjectMapper
 
 class CryptoListRemoteDataManager : CryptoListRemoteDataManagerInputProtocol {
     var remoteRequestHandler: CryptoListRemoteDataManagerOutputProtocol?
+    var clientService : CryptoFetchingDataProtocol?
     
     func retrieveCryptoList() {
-        Alamofire
-            .request(Endpoints.Posts.fetch.url, method: .get)
-            .validate()
-            .responseObject(completionHandler: { (response: DataResponse<CryptosModel>) in
-                switch response.result {
-                case .success(let crypto):
-                    self.remoteRequestHandler?.onCryptosRetrieved(crypto.data)
-                case .failure( _):
-                    self.remoteRequestHandler?.onError()
-                }
-            })
+        clientService?.fetchingData(completion: { [weak self] (data, error) in
+            guard error == nil else {
+                self?.remoteRequestHandler?.onError()
+                return
+            }
+            self?.remoteRequestHandler?.onCryptosRetrieved(data)
+        })
     }
 }

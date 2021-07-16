@@ -16,6 +16,7 @@ class CryptoListRouter : CryptoListRouterProtocol {
             let interactor: CryptoListInteractorInputProtocol & CryptoListRemoteDataManagerOutputProtocol = CryptoListInteractor()
             let remoteDataManager: CryptoListRemoteDataManagerInputProtocol = CryptoListRemoteDataManager()
             let router : CryptoListRouterProtocol = CryptoListRouter()
+            let clientService : CryptoFetchingDataProtocol = ClientService()
             
             view.presenter = presenter
             presenter.view = view
@@ -23,6 +24,7 @@ class CryptoListRouter : CryptoListRouterProtocol {
             presenter.interactor = interactor
             interactor.presenter = presenter
             interactor.remoteDatamanager = remoteDataManager
+            remoteDataManager.clientService = clientService
             remoteDataManager.remoteRequestHandler = interactor
             
             return navController

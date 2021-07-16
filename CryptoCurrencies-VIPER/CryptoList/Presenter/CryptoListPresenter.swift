@@ -11,8 +11,7 @@ class CryptoListPresenter: CryptoListPresenterProtocol {
     weak var view: CryptoListViewProtocol?
     var interactor: CryptoListInteractorInputProtocol?
     var router: CryptoListRouterProtocol?
-    private var restoreList : [CryptoModel] = []
-    
+   
     func viewDidLoad() {
         view?.showLoading()
         interactor?.retrieveCryptoList()

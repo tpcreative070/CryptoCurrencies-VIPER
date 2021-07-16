@@ -33,6 +33,7 @@
 		310E53BA269F6D8B0075543A /* CryptoListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310E53B9269F6D8B0075543A /* CryptoListPresenter.swift */; };
 		310E53BD269F70290075543A /* CryptoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310E53BC269F70290075543A /* CryptoListView.swift */; };
 		310E53C0269F70840075543A /* CryptoListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310E53BF269F70840075543A /* CryptoListRouter.swift */; };
+		3161624F26A13AFC001D8247 /* ClientService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3161624E26A13AFC001D8247 /* ClientService.swift */; };
 		3188A4E6269FF4D600ECE6D2 /* CryptoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3188A4E5269FF4D600ECE6D2 /* CryptoTableViewCell.swift */; };
 		3188A4F226A0A0AC00ECE6D2 /* CryptoListPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3188A4F126A0A0AC00ECE6D2 /* CryptoListPresenterTests.swift */; };
 		3188A4F426A0A0CA00ECE6D2 /* CryptoListInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3188A4F326A0A0CA00ECE6D2 /* CryptoListInteractorTests.swift */; };
@@ -102,6 +103,7 @@
 		310E53B9269F6D8B0075543A /* CryptoListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoListPresenter.swift; sourceTree = "<group>"; };
 		310E53BC269F70290075543A /* CryptoListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoListView.swift; sourceTree = "<group>"; };
 		310E53BF269F70840075543A /* CryptoListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoListRouter.swift; sourceTree = "<group>"; };
+		3161624E26A13AFC001D8247 /* ClientService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientService.swift; sourceTree = "<group>"; };
 		3188A4E5269FF4D600ECE6D2 /* CryptoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoTableViewCell.swift; sourceTree = "<group>"; };
 		3188A4F126A0A0AC00ECE6D2 /* CryptoListPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoListPresenterTests.swift; sourceTree = "<group>"; };
 		3188A4F326A0A0CA00ECE6D2 /* CryptoListInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoListInteractorTests.swift; sourceTree = "<group>"; };
@@ -242,6 +244,7 @@
 			isa = PBXGroup;
 			children = (
 				310E53B3269F680D0075543A /* CryptoListDataManager.swift */,
+				3161624E26A13AFC001D8247 /* ClientService.swift */,
 			);
 			path = DataManager;
 			sourceTree = "<group>";
@@ -422,6 +425,7 @@
 				310E53AD269F66450075543A /* CryptoModel.swift in Sources */,
 				310E53BD269F70290075543A /* CryptoListView.swift in Sources */,
 				310E5360269F64EA0075543A /* AppDelegate.swift in Sources */,
+				3161624F26A13AFC001D8247 /* ClientService.swift in Sources */,
 				310E53A8269F65A50075543A /* Endpoints.swift in Sources */,
 				310E53AA269F65E30075543A /* PersistenceError.swift in Sources */,
 				310E53B2269F67930075543A /* CryptoListProtocols.swift in Sources */,

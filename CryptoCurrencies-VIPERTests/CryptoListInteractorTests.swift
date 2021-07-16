@@ -10,10 +10,28 @@ import XCTest
 
 class CryptoListInteractorTests: XCTestCase {
     
-    let presenter: CryptoListPresenterProtocol & CryptoListInteractorOutputProtocol = CryptoListPresenter()
     let interactor: CryptoListInteractorInputProtocol & CryptoListRemoteDataManagerOutputProtocol = CryptoListInteractor()
     let remoteDataManager: CryptoListRemoteDataManagerInputProtocol = CryptoListRemoteDataManager()
-    let router : CryptoListRouterProtocol = CryptoListRouter()
+    let clientService  = MockClientService()
+    var fakeInteractionOutput = FakeInteractionOutput()
+    
+    func fakeData() -> [CryptoModel] {
+        return [CryptoModel(base: "Litecoin", counter: "", buyPrice: "1", sellPrice: "1", icon: "", name: "Litecoin"),
+                                     CryptoModel(base: "Neo", counter: "", buyPrice: "1", sellPrice: "1", icon: "", name: "Neo"),
+                                     CryptoModel(base: "Bitcoin", counter: "", buyPrice: "1", sellPrice: "1", icon: "", name: "Bitcoin")
+        ]
+    }
+    
+    final class MockClientService : CryptoFetchingDataProtocol {
+        var error : Error? = NSError(domain: "", code: -1, userInfo: nil)
+        func fetchingData(completion: @escaping ([CryptoModel], Error?) -> Void) {
+            guard error != nil else {
+                completion([],nil)
+                return
+            }
+            completion([],error)
+        }
+    }
     
     final class FakeInteractionOutput : CryptoListInteractorOutputProtocol {
         var data : [CryptoModel] = []
@@ -37,37 +55,41 @@ class CryptoListInteractorTests: XCTestCase {
         }
     }
     
-    final class FakeInteractorInput : CryptoListInteractorInputProtocol {
-        var presenter: CryptoListInteractorOutputProtocol?
-        
-        var remoteDatamanager: CryptoListRemoteDataManagerInputProtocol?
-        
-        func retrieveCryptoList() {
-            
-        }
-        
-        func filterCrypto(original data: [CryptoModel], searchText: String) {
-            
-        }
-        
-        func startTimer() {
-            
-        }
-        
-        func stopTimer() {
-            
-        }
-    }
-    
-    final class FakeRemoteDataManagerInput : CryptoListRemoteDataManagerInputProtocol {
-        var remoteRequestHandler: CryptoListRemoteDataManagerOutputProtocol?
-        func retrieveCryptoList() {
-            
-        }
-    }
-    
     override func setUp()  {
-        interactor.presenter = FakeInteractionOutput()
-        interactor.remoteDatamanager = FakeRemoteDataManagerInput()
+        remoteDataManager.clientService = clientService
+        interactor.presenter = fakeInteractionOutput
     }
+    
+    func testFetchingDataWithSuccess(){
+        clientService.error = nil
+        remoteDataManager.retrieveCryptoList()
+        XCTAssertNil(clientService.error)
+    }
+    
+    func testFetchingDataWithFailure(){
+        clientService.error = NSError(domain: "", code: -1, userInfo: nil)
+        remoteDataManager.retrieveCryptoList()
+        XCTAssertNotNil(clientService.error)
+    }
+    
+    func testFilterCryptoIsEmptyInput(){
+        interactor.filterCrypto(original: [], searchText: "")
+        XCTAssertTrue(interactor.enumInteractor == EnumInteractor.empty)
+    }
+    
+    func testFilterCryptoHasValueInput(){
+        interactor.filterCrypto(original: [], searchText: "Bitcoin")
+        XCTAssertTrue(interactor.enumInteractor == EnumInteractor.hasValue)
+    }
+    
+    func testFilterCryptoResponseWithValues(){
+        interactor.filterCrypto(original: fakeData(), searchText: "Bitcoin")
+        XCTAssertTrue(fakeInteractionOutput.data.count>0)
+    }
+    
+    func testFilterCryptoResponseWithNoValues(){
+        interactor.filterCrypto(original: fakeData(), searchText: "Bitcoin-Z")
+        XCTAssertTrue(fakeInteractionOutput.data.count==0)
+    }
+    
 }
